@@ -1,0 +1,62 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background-color: #4c7aae;
+}
+
+
+input {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+
+.weather_description {
+    color: white;
+    margin-top: 2rem;
+}
+
+
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 300px; /* Adjust width to fit within content area */
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff9951;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #ffc195;
+}
+
+#error {
+    color: red;
+    font-size: 14px;
+}
+
+
+#city {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+
+#weather {
+    margin-top: 20px;
+}
