@@ -2,44 +2,20 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I created a Weather Dashboard that uses the Open Weather Map API to show the user the current weather as well as a 5-day forecast for the city they search for. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The user can search any city and view the current weather conditions as well as a 5-day forecast. The conditions include temperature, humidity, and wind speed. A search history also appears on the left sidebar after each new search is made.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screenshot of application](/assets/screenshot.PNG)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Open Weather Map API: https://openweathermap.org/forecast5
+Referenced code from GitHub user AndyUGA to understand how the API elements connect to the HTML and CSS elements: https://github.com/AndyUGA/weather_api_html_css_js_project/tree/main
 
 ## License
 
-The last section of a high-quality README file is the license.
+MIT
