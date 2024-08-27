@@ -1,62 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 25px;
     background-color: #4c7aae;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-
-input {
-    margin-top: 2rem;
-    padding: 1rem;
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.weather_description {
-    color: white;
-    margin-top: 2rem;
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-#cityInput {
+.search-section input {
     padding: 10px;
+    width: 40%;
     font-size: 16px;
-    border: 2px solid #ddd;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    width: 300px; /* Adjust width to fit within content area */
     margin-right: 10px;
 }
 
-
-button {
+.search-section button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff9951;
+    background-color: #ff9500;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-
-button:hover {
-    background-color: #ffc195;
+.search-section button:hover {
+    background-color: #ffb957;
 }
 
-#error {
-    color: red;
-    font-size: 14px;
+.current-weather-section,
+.forecast-section {
+    margin-bottom: 20px;
 }
 
+.current-weather-section h2 {
+    margin-bottom: 10px;
+}
 
-#city {
-    font-size: 24px;
+.weather_description {
     margin: 10px 0;
 }
 
+.forecast-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-#weather {
-    margin-top: 20px;
+.forecast-section div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-section div > div {
+    width: 18%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.forecast-section img {
+    max-width: 50px;
+    margin-bottom: 5px;
+}
+
+.history-section {
+    text-align: center;
+}
+
+.history-section button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history-section button:hover {
+    background-color: #aaa;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
 }
